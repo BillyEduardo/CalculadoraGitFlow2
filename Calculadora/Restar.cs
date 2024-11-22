@@ -4,7 +4,7 @@ namespace Calculadora
 {
 	public class Resta
 	{
-		// Método para realizar la resta de dos números
+		
 		public static void RealizarResta()
 		{
 			Console.WriteLine("Has seleccionado Restar.");

@@ -4,7 +4,7 @@ namespace Calculadora
 {
 	public class Suma
 	{
-		// Método para realizar la suma de dos números
+		
 		public static void RealizarSuma()
 		{
 			Console.WriteLine("Has seleccionado Sumar.");
