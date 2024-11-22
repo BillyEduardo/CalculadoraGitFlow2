@@ -6,14 +6,36 @@ namespace Calculadora
 	{
 		static void Main(string[] args)
 		{
-			// Llamar al método MostrarMenu desde la clase Menu
-			Menu.MostrarMenu();
+			int opcion;
 
-			// Leer la opción elegida por el usuario
-			int opcion = Convert.ToInt32(Console.ReadLine());
+			// Usamos un bucle para mostrar el menú repetidamente hasta que el usuario elija salir
+			do
+			{
+				// Llamar al método MostrarMenu desde la clase Menu
+				Menu.MostrarMenu();
 
-			// Procesar la opción elegida
-			Menu.ProcesarOpcion(opcion);
+				
+				bool opcionValida = int.TryParse(Console.ReadLine(), out opcion);
+
+				
+				if (opcionValida)
+				{
+					
+					Menu.ProcesarOpcion(opcion);
+				}
+				else
+				{
+					Console.WriteLine("Por favor ingrese una opción válida.");
+					opcion = 0; 
+				}
+
+				// Preguntar al usuario si desea realizar otra operación
+				Console.WriteLine("¿Desea realizar otra operación? (si/no): ");
+			}
+			while (Console.ReadLine().ToLower() == "si"); 
+
+			
+			Console.WriteLine("¡Gracias por usar la calculadora!");
 		}
 	}
 }

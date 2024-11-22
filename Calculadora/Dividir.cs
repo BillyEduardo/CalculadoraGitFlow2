@@ -4,7 +4,7 @@ namespace Calculadora
 {
 	public class Division
 	{
-		// Método para realizar la división de dos números
+		
 		public static void RealizarDivision()
 		{
 			Console.WriteLine("Has seleccionado Dividir.");

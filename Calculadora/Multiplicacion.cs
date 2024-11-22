@@ -4,7 +4,7 @@ namespace Calculadora
 {
 	public class Multiplicacion
 	{
-		// Método para realizar la multiplicación de dos números
+		
 		public static void RealizarMultiplicacion()
 		{
 			Console.WriteLine("Has seleccionado Multiplicar.");
