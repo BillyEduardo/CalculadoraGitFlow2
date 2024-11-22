@@ -20,11 +20,11 @@ namespace Calculadora
 			switch (opcion)
 			{
 				case 1: // Sumar
-					Console.WriteLine("Realizar Suma");  // Llamamos al método de la clase Suma
+					  Suma.RealizarSuma();// Llamamos al método de la clase Suma
 					break;
 				case 2: // Restar
-					Console.WriteLine("Realizar Resta"); // Llamamos al método de la clase Resta
-					break;
+					Resta.RealizarResta(); // Llamamos al método de la clase Resta
+					break;					
 				case 3: // Multiplicar
 					Multiplicacion.RealizarMultiplicacion(); // Llamamos al método de la clase Multiplicacion
 					break;
