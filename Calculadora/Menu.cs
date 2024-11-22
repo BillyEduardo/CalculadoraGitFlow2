@@ -21,8 +21,8 @@ namespace Calculadora
 				case 1: // Sumar
 					Suma.RealizarSuma();  // Llamamos al método de la clase Suma
 					break;
-				case 2:
-					Console.WriteLine("Has seleccionado Restar.");
+				case 2: // Restar
+					Resta.RealizarResta(); // Llamamos al método de la clase Resta
 					break;
 				case 3:
 					Console.WriteLine("Has seleccionado Multiplicar.");
